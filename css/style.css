@@ -4,6 +4,10 @@
   font-family: "Roboto", sans-serif;
 }
 
+a {
+  text-decoration: none !important;
+}
+
 img,
 iframe {
   max-width: 100%;
@@ -28,8 +32,13 @@ header,
     background: url("../img/bg.svg");
   }
 
+  a {
+    text-decoration: none;
+  }
+
   header {
     background: #000;
+    border-bottom: 1px solid #F47810;
   }
 
   .logo {
@@ -45,7 +54,6 @@ header,
     float: right;
     color: #F47810;
     display: flex;
-    margin-top: 0.9rem;
   }
 
   .text-slider {
@@ -78,6 +86,7 @@ header,
 
   .header {
     font-size: 1.125rem;
+    font-family: "Sawarabi Gothic", sans-serif;
   }
   .header img {
     filter: invert(100%);
@@ -115,11 +124,17 @@ header,
     font-size: 0.8125rem;
   }
 
-  .button-menu {
+  .button-open,
+  .button-close {
     position: fixed;
     top: 38.1%;
     border: none;
     background: #000;
+    z-index: 1000000;
+  }
+
+  .button-close {
+    left: 51%;
   }
 
   .numb {
@@ -128,7 +143,7 @@ header,
   }
 
   .side-menu {
-    position: absolute;
+    position: fixed;
     display: none;
     height: 100%;
     width: 52%;
@@ -158,8 +173,8 @@ header,
     padding: 0.5rem 0 0 1rem;
   }
 
-  .border {
-    border-bottom: 1px solid #F47810;
+  .line-head {
+    background-color: #F47810;
     width: 100%;
     height: 1px;
   }
@@ -187,6 +202,14 @@ header,
   }
   .site-block p {
     margin-bottom: 1.5rem;
+  }
+
+  .button-cart {
+    background-color: #F47810;
+    border-radius: 1rem;
+    border: none;
+    padding: 0.3rem 1.5rem;
+    margin-left: 1.2rem;
   }
 }
 

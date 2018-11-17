@@ -11,7 +11,12 @@ $(document).ready(() =>{
 	$('.show').click(function(){
 		$(this).parent('.description').addClass('moret');
 	});
-	$('.button-menu').click(function(){
-
+	$('.button-open').click(function(){
+		$('.side-menu').show();
+		$('.button-open').hide();
+	});
+	$('.button-close').click(function(){
+		$('.side-menu').hide();
+		$('.button-open').show();
 	});
 });
