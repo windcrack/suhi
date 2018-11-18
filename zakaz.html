@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<meta name="description" content="">
+		<meta name="author" content="">
+		<link rel="icon" href="img/logo.svg">
+		<title>Суши, роллы - Стильный ресторан японской кухни в Смоленске «Хайтацу»</title>
+		<!-- Шрифты -->
+		<link href="https://fonts.googleapis.com/css?family=Roboto&amp;subset=cyrillic-ext" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Sawarabi+Gothic" rel="stylesheet">
+		<!-- Bootstrap core CSS -->
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<link href="css/bootstrap-grid.min.css" rel="stylesheet">
+		<!-- Слайдер -->
+		<link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+		<link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+		<!-- Мои стили -->
+		<link href="css/style.css" rel="stylesheet">
+	</head>
+	<body>
+		<button class="button-open"><img src="img/uhide.svg" alt="Открыть"></button>
+		<div class="side-menu text-left">
+			<p class="head-text">Абдульмахалаш Фамили...</p>
+			<p class="head-text pb-1"><span>0</span><span> баллов</span></p>
+			<div class="line-head mt-1"></div>
+			<div class="site-block">
+				<a class="text-white" href=""><p>Позвонить нам</p></a>
+				<a class="text-white" href=""><p>Акции и бонусы</p></a>
+				<a class="text-white" href=""><p>Доставка</p></a>
+				<a class="text-white" href=""><p>Контакты</p></a>
+			</div>
+			<div class="social-block">
+				<div class="h-2">Подписатся:</div>
+				<div class="social">
+					<div class="row">
+						<a href="" target="_blank"><img src="img/vk.svg" alt="В контакте"></a>
+						<a href="" target="_blank"><img src="img/ok.svg" alt="Однокласники"></a>
+						<a href="" target="_blank"><img src="img/inst.svg" alt="Инстаграмм"></a>
+					</div>
+				</div>
+			</div>
+			<button class="button-close"><img src="img/uhide.svg" alt="Закрыть"></button>
+		</div>
+		<header>
+			<nav>
+				<a class="logo pr-4" href="index.html"><img src="img/logo.svg" alt="Хайтацу"></a>
+				<div class="cart ml-2 pt-3 pb-2">
+					<a href="cart.html"></a><img class="" src="img/Vector.svg" alt="Корзина"><span class="numb">0</span><span class="pr-1">р.</span>
+				</div>
+				<div class="text-menu pt-3 pb-3">
+					<div class="ml-2">
+						<a href="cart.html">
+							<p class="text-center t-color-me">Назад</p>
+						</a>
+					</div>
+				</div>
+			</nav>
+		</header>
+		<!-- Доставка -->
+		<div class="container delivery">
+			<div class="row text-header-zakaz">
+				<div class="col-6">
+					<a class="active-link text-center" href="#"><p class="pt-5 pb-5">Доставка</p></a>
+				</div>
+				<div class="col-6">
+					<a class="text-center link-def" href="#"><p class="pt-5 pb-5">Самовывоз</p></a>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-4 link-def">Имя</div><div class="col"><input class="input-zakaz" type="text" name="name" required></div>
+				<div class="col-4 link-def">Телефон</div><div class="col"><input class="input-zakaz" type="phone" name="phone" required></div>
+				<div class="col-4 link-def">Улица</div><div class="col"><input class="input-zakaz" type="text" name="street" required></div>
+			</div>
+			<div class="row dop-opt">
+				<div class="offset-2">Дом<input class="input-zakaz ml-2" type="text" name="hous" required></div>
+				<div class="ml-5">Кв<input class="input-zakaz ml-2" type="text" name="apartment" required></div>
+			</div>
+			<div class="row">
+				<p class="link-def ml-3">Комментарий:</p>
+				<textarea name="comment" class="comm-area m-auto" id="com" cols="36" rows="3" placeholder="Уточните пожалуйста подъезд, этаж, домофон или любую информацию которая поможет нам вас накормить :)"></textarea>
+			</div>
+			<div class="row mt-3 dop-opt">
+				<div class="col-3 text-center active-link-down">Карта</div>
+				<div class="col-3 text-center">Наличными</div>
+				<div class="col-6 text-center payment pt-1">К оплате:<span>00000</span>р.</div>
+			</div>
+			<div class="row float-right">
+				<a class="no-credit" href="#"><p>Оплатить</p></a>
+			</div>
+		</div>
+		<!-- Само вывоз -->
+		<div class="container pickup">
+			<div class="row">
+				<div class="col-4 link-def">Имя</div><div class="col"><input class="input-zakaz" type="text" name="name" required></div>
+				<div class="col-4 link-def">Телефон</div><div class="col"><input class="input-zakaz" type="phone" name="phone" required></div>
+			</div>
+			<div class="row mt-5">
+				<div class="">
+					<p class="address ml-4 mr-2">Ждем вас круглосуточно по адресу Ул.Крупской, д.41А</p>
+				</div>
+			</div>
+		</div>
+		<!-- Bootstrap core JavaScript ================================================== -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script>window.jQuery || document.write('<script src="js/jquery-3.2.1.slim.min.js"><\/script>')</script>
+		<!-- Скипт слайдера -->
+		<script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+		<script src="slick/slick.min.js"></script>
+	  	<script src="js/script.js"></script>
+	</body>
+</html>

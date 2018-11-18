@@ -1,11 +1,12 @@
 $fc: #F47810;
-$fcw: #fff;
+$fcw: #E3E9CB;
 $font: 'Roboto', sans-serif;
 $fontO: 'Sawarabi Gothic', sans-serif;
 *{
 	margin: 0;
 	padding: 0;
 	font-family: $font;
+	
 }
 a{
 	text-decoration: none !important;
@@ -20,9 +21,16 @@ header,
 .price-main{
 	display: none;
 }
-
+.t-color-me{
+	color: $fc;
+}
 @media screen and (max-width: 600px){
-
+	.show{
+		display: block;
+	}
+	.hide{
+		display: none;
+	}
 	header,
 	.logo,
 	.slider-main,
@@ -31,6 +39,7 @@ header,
 	}
 	body{
 		background: url('../img/bg.svg');
+		background-color: #000;
 	}
 	a{
 		text-decoration: none;
@@ -188,4 +197,5 @@ header,
 		}
 	}
 	@import 'cart';
+	@import 'zakaz';
 }

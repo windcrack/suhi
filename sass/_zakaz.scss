@@ -1,0 +1,52 @@
+.active-link{
+	color: $fc;
+	text-decoration: underline !important;
+	font-size: 1.125rem;
+	font-weight: 600;
+	&:hover{
+		color: $fc;
+	}
+}
+.active-link-down{
+	color: $fcw;
+	text-decoration: underline !important;
+	font-size: 1.125rem;
+	font-weight: 300;
+	&:hover{
+		color: $fcw;
+	}
+}
+.link-def{
+	color: $fcw;
+	font-size: 1.125rem;
+	font-weight: 600;
+}
+.input-zakaz{
+	background-color: rgba(99, 64, 2, 0.1);
+	border-radius: 2rem;
+	border: solid 1px $fc;
+	margin: 0 0 2rem 0;
+	text-align: center;
+	color: $fc;
+}
+.dop-opt{
+	color: $fcw;
+	font-size: 1.125rem;
+	font-weight: 300;
+	input{
+		width: 5rem;
+		float: right;
+	}
+	.payment{
+		font-size: 0.875rem;
+	}
+}
+.comm-area{
+	border: solid 1px $fc;
+	color: $fcw;
+	background-color: rgba(99, 64, 2, 0.1);
+}
+.address{
+	color: $fcw;
+	font-size: 0.875rem;
+}
