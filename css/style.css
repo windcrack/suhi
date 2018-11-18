@@ -211,6 +211,25 @@ header,
     padding: 0.3rem 1.5rem;
     margin-left: 1.2rem;
   }
+
+  .img-cart {
+    max-width: 25.333% !important;
+  }
+
+  .next-towar {
+    font-size: 0.8125rem;
+  }
+  .next-towar p {
+    margin-bottom: 0 !important;
+  }
+
+  .numder-color {
+    color: #F47810;
+  }
+
+  .cart-header {
+    font-size: 1.125rem;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
