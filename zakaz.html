@@ -18,6 +18,7 @@
 		<link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
 		<!-- Мои стили -->
 		<link href="css/style.css" rel="stylesheet">
+
 	</head>
 	<body>
 		<button class="button-open"><img src="img/uhide.svg" alt="Открыть"></button>
@@ -49,7 +50,7 @@
 				<div class="cart ml-2 pt-3 pb-2">
 					<a href="cart.html"></a><img class="" src="img/Vector.svg" alt="Корзина"><span class="numb">0</span><span class="pr-1">р.</span>
 				</div>
-				<div class="text-menu pt-3 pb-3">
+				<div class="text-menu pt-3 pb-1">
 					<div class="ml-2">
 						<a href="cart.html">
 							<p class="text-center t-color-me">Назад</p>
@@ -59,55 +60,67 @@
 			</nav>
 		</header>
 		<!-- Доставка -->
-		<div class="container delivery">
+		<div class="container">
 			<div class="row text-header-zakaz">
 				<div class="col-6">
-					<a class="active-link text-center" href="#"><p class="pt-5 pb-5">Доставка</p></a>
+					<a class="text-center del active-link" href="#"><p class="pt-5 pb-5">Доставка</p></a>
 				</div>
 				<div class="col-6">
-					<a class="text-center link-def" href="#"><p class="pt-5 pb-5">Самовывоз</p></a>
+					<a class="text-center pick link-def" href="#"><p class="pt-5 pb-5">Самовывоз</p></a>
 				</div>
 			</div>
-			<div class="row">
+		</div>
+		<div class="container delivery">
+			<div class="row main-opt">
 				<div class="col-4 link-def">Имя</div><div class="col"><input class="input-zakaz" type="text" name="name" required></div>
-				<div class="col-4 link-def">Телефон</div><div class="col"><input class="input-zakaz" type="phone" name="phone" required></div>
+				<div class="col-4 link-def">Телефон</div><div class="col"><input class="input-zakaz" id="phone-mask" type="phone" name="phone" required></div>
 				<div class="col-4 link-def">Улица</div><div class="col"><input class="input-zakaz" type="text" name="street" required></div>
 			</div>
 			<div class="row dop-opt">
-				<div class="offset-2">Дом<input class="input-zakaz ml-2" type="text" name="hous" required></div>
-				<div class="ml-5">Кв<input class="input-zakaz ml-2" type="text" name="apartment" required></div>
+				<div class="offset-2">Дом<input class="input-zakaz ml-2" id="hous" type="text" name="hous" required></div>
+				<div class="ml-5">Кв<input class="input-zakaz ml-2" id="app" type="text" name="apartment" required></div>
 			</div>
 			<div class="row">
 				<p class="link-def ml-3">Комментарий:</p>
 				<textarea name="comment" class="comm-area m-auto" id="com" cols="36" rows="3" placeholder="Уточните пожалуйста подъезд, этаж, домофон или любую информацию которая поможет нам вас накормить :)"></textarea>
 			</div>
 			<div class="row mt-3 dop-opt">
-				<div class="col-3 text-center active-link-down">Карта</div>
-				<div class="col-3 text-center">Наличными</div>
+				<div class="col-3 text-center map active-link-down">Карта</div>
+				<div class="col-3 text-center cash">Наличными</div>
 				<div class="col-6 text-center payment pt-1">К оплате:<span>00000</span>р.</div>
 			</div>
-			<div class="row float-right">
-				<a class="no-credit" href="#"><p>Оплатить</p></a>
+			<div class="row float-right credit">
+				<a class="text-center link-credits" href="#"><p class="mr-5 pr-1 mt-3">Оплатить</p></a>
+			</div>
+			<div class="row float-right no-credit" style="display: none;">
+				<a class="no-credit text-center link-credits" href="#"><p class="mr-5 pr-1 mt-3">Заказать</p></a>
 			</div>
 		</div>
 		<!-- Само вывоз -->
-		<div class="container pickup">
+		<div class="container pickup" style="display: none;">
 			<div class="row">
 				<div class="col-4 link-def">Имя</div><div class="col"><input class="input-zakaz" type="text" name="name" required></div>
-				<div class="col-4 link-def">Телефон</div><div class="col"><input class="input-zakaz" type="phone" name="phone" required></div>
+				<div class="col-4 link-def">Телефон</div><div class="col"><input class="input-zakaz" id="phone-mask-pick" type="phone" name="phone" required></div>
 			</div>
 			<div class="row mt-5">
 				<div class="">
 					<p class="address ml-4 mr-2">Ждем вас круглосуточно по адресу Ул.Крупской, д.41А</p>
 				</div>
 			</div>
+			<div class="row float-right credit" style="display: none;>
+				<a class="text-center link-credits" href="#"><p class="mr-5 pr-1 mt-3">Оплатить</p></a>
+			</div>
+			<div class="row float-right no-credit">
+				<a class="no-credit text-center link-credits" href="#"><p class="mr-5 pr-1 mt-3">Заказать</p></a>
+			</div>
 		</div>
 		<!-- Bootstrap core JavaScript ================================================== -->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 		<script>window.jQuery || document.write('<script src="js/jquery-3.2.1.slim.min.js"><\/script>')</script>
 		<!-- Скипт слайдера -->
-		<script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+		<script src="js/jquery-migrate-1.2.1.min.js"></script>
 		<script src="slick/slick.min.js"></script>
+		<script src="js/jquery.maskedinput.js"></script>
 	  	<script src="js/script.js"></script>
 	</body>
 </html>

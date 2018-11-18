@@ -25,12 +25,6 @@ header,
 	color: $fc;
 }
 @media screen and (max-width: 600px){
-	.show{
-		display: block;
-	}
-	.hide{
-		display: none;
-	}
 	header,
 	.logo,
 	.slider-main,
@@ -40,6 +34,7 @@ header,
 	body{
 		background: url('../img/bg.svg');
 		background-color: #000;
+		color: $fcw;
 	}
 	a{
 		text-decoration: none;
@@ -82,6 +77,11 @@ header,
 		color: $fc;
 		margin-left: 7px;
 	}
+	.price-main{
+		img{
+			border-radius: 0.5rem;
+		}
+	}
 	.button{
 		background-color: $fc;
 		border-radius: 1rem;
@@ -92,7 +92,6 @@ header,
 		font-size: 1.125rem;
 		font-family: $fontO;
 		img{
-			filter: invert(100%);
 			float: right;
 		}
 	}

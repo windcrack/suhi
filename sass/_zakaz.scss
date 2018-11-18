@@ -29,6 +29,14 @@
 	text-align: center;
 	color: $fc;
 }
+.link-credits{
+	color: $fc;
+	a{
+		text-decoration: none !important;
+		color: $fc !important;
+	}
+	
+}
 .dop-opt{
 	color: $fcw;
 	font-size: 1.125rem;
