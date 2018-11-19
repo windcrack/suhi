@@ -204,19 +204,26 @@ header,
     margin-top: 1rem;
   }
 
+  .site-block-call {
+    padding: 10rem 0 0rem 0rem;
+  }
+
   .site-block {
-    padding: 0 0 0 1rem;
+    padding: 1rem 0 6rem 1rem;
     font-size: 1.125rem;
     font-weight: 600;
-  }
-  .site-block:fist-child {
-    padding: 10rem 0 10rem 0rem;
   }
   .site-block a {
     color: #E3E9CB;
   }
   .site-block p {
     margin-bottom: 1.5rem;
+  }
+
+  .social-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   .button-cart {
