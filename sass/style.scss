@@ -70,7 +70,7 @@ header,
 		// margin-top: -1rem;
 	}
 	.anchor{
-		color: #000;
+		color: $fcw;
 		font-weight: 600;
 	}
 	.price{
@@ -188,9 +188,16 @@ header,
 		}
 	}
 	.site-block{
-		padding: 10rem 0 10rem 1rem;
+		padding: 0 0 0 1rem;
 		font-size: 1.125rem;
 		font-weight: 600;
+		&:fist-child{	
+			padding: 10rem 0 10rem 0rem;
+		}
+		a{
+			color: $fcw;
+		}
+		
 		p{
 			margin-bottom: 1.5rem;
 		}

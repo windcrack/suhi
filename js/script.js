@@ -8,6 +8,18 @@ $(document).ready(() =>{
 			htmlS = '<span class="show">' + html.substring(0, maxt) + '</span>';
 			text.html(htmlS + crop + htmlH);
 	});
+	let inputMain = document.querySelectorAll('.main'),
+		btnO = document.querySelector('.credit'),
+		btnN = document.querySelector('.no-credit');
+		console.log(inputMain);
+		console.log(btnO);
+		console.log(btnN);
+		for (let i = 0; i < inputMain.length; i++) {
+			if (inputMain[i] == "") {
+				btnO.disabled = true;
+				btnO.disabled = true;
+			}
+		}
 	$('.show').click(function(){
 		$(this).parent('.description').addClass('moret');
 	});
@@ -22,7 +34,8 @@ $(document).ready(() =>{
 	$(() =>{
 		$('#phone-mask').mask('+7(999) 999-99-99');
 		$('#phone-mask-pick').mask('+7(999) 999-99-99');
-		$('#hous').mask('99 /999');
+		$('#phone-reg').mask('+7(999) 999-99-99');
+		$('#hous').mask('99999',{placeholder: ""});
 		$('#app').mask('9999',{placeholder: ""});
 	});
 	$('.pick').click(() =>{
@@ -54,6 +67,7 @@ $(document).ready(() =>{
 		$('.map').addClass('active-link-down');
 		$('.cash').removeClass('active-link-down');
 	});
+	// Слайдер
 	$('.text-slider').slick({
         adaptiveHeight: true,
         arrows: false,

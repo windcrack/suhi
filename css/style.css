@@ -74,7 +74,7 @@ header,
   }
 
   .anchor {
-    color: #000;
+    color: #E3E9CB;
     font-weight: 600;
   }
 
@@ -205,9 +205,15 @@ header,
   }
 
   .site-block {
-    padding: 10rem 0 10rem 1rem;
+    padding: 0 0 0 1rem;
     font-size: 1.125rem;
     font-weight: 600;
+  }
+  .site-block:fist-child {
+    padding: 10rem 0 10rem 0rem;
+  }
+  .site-block a {
+    color: #E3E9CB;
   }
   .site-block p {
     margin-bottom: 1.5rem;
@@ -300,6 +306,7 @@ header,
     border: solid 1px #F47810;
     color: #E3E9CB;
     background-color: rgba(99, 64, 2, 0.1);
+    font-size: 0.8125rem;
   }
 
   .address {
