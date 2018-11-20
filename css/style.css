@@ -51,9 +51,12 @@ header,
   }
 
   footer {
-    background: #181B23;
-    font-size: 0.625rem;
-    color: #F47810;
+    background-color: #181B23;
+    font-size: 0.5625rem;
+    color: #FDAD1E;
+  }
+  footer .footer-text {
+    float: left;
   }
 
   header {
@@ -67,7 +70,7 @@ header,
   }
 
   .active-menu {
-    color: #F47810;
+    color: #F47810 !important;
   }
 
   .cart {
@@ -84,6 +87,7 @@ header,
     align-content: center;
   }
   .text-slider a {
+    color: #E3E9CB;
     text-align: center;
   }
 
@@ -282,6 +286,15 @@ header,
     font-size: 1.125rem;
   }
 
+  .balls {
+    border: 2px #FDAD1E solid;
+    border-radius: .5rem;
+    font-size: 0.875rem;
+    background-color: transparent;
+    width: 78%;
+    color: #E3E9CB;
+  }
+
   .active-link {
     color: #F47810;
     text-decoration: underline !important;
@@ -310,7 +323,7 @@ header,
 
   .input-zakaz {
     background-color: rgba(99, 64, 2, 0.1);
-    border-radius: 2rem;
+    border-radius: .5rem;
     border: solid 1px #F47810;
     margin: 0 0 2rem 0;
     text-align: center;

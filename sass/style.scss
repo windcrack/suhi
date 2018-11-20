@@ -1,5 +1,6 @@
 $fc: #F47810;
 $fcw: #E3E9CB;
+$fcn: #FDAD1E;
 $font: 'Roboto', sans-serif;
 $fontO: 'Sawarabi Gothic', sans-serif;
 *{
@@ -46,9 +47,12 @@ header,
 		text-decoration: none;
 	}
 	footer{
-		background: #181B23;
-		font-size: 0.625rem;
-		color: $fc;
+		background-color: #181B23;
+		font-size: 0.5625rem;
+		color: $fcn;
+		.footer-text{
+			float: left;
+		}
 	}
 	header{
 		background: #000;
@@ -59,7 +63,7 @@ header,
 		float: left;
 	}
 	.active-menu{
-		color: $fc;
+		color: $fc !important;
 	}
 	.cart{
 		float: right;
@@ -73,7 +77,8 @@ header,
 		justify-content: center;
 		align-items: center;
 		align-content: center;
-		a{
+		a{	
+			color: $fcw;
 			text-align: center;
 		}
 	}
