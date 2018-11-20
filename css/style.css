@@ -25,6 +25,14 @@ header,
 }
 
 @media screen and (max-width: 600px) {
+  .show {
+    display: block;
+  }
+
+  .hide {
+    display: none;
+  }
+
   header,
   .logo,
   .slider-main,
@@ -40,6 +48,12 @@ header,
 
   a {
     text-decoration: none;
+  }
+
+  footer {
+    background: #181B23;
+    font-size: 0.625rem;
+    color: #F47810;
   }
 
   header {
@@ -71,6 +85,10 @@ header,
   }
   .text-slider a {
     text-align: center;
+  }
+
+  .more-opt {
+    font-size: 0.812rem;
   }
 
   .anchor {
@@ -153,13 +171,14 @@ header,
 
   .side-menu {
     position: fixed;
-    display: none;
+    display: block;
     height: 100%;
-    width: 52%;
+    width: 0;
+    opacity: 0;
+    transition: 2s;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    z-index: 999999;
     background: #181b23;
     color: #E3E9CB;
   }
@@ -173,6 +192,16 @@ header,
   }
   .side-menu p {
     margin-bottom: 0;
+  }
+
+  .move {
+    width: 52%;
+    opacity: 1;
+  }
+
+  .content-in {
+    z-index: 999999;
+    display: none;
   }
 
   .head-text {
@@ -209,7 +238,7 @@ header,
   }
 
   .site-block {
-    padding: 1rem 0 6rem 1rem;
+    padding: 1.5rem 0 6rem 1rem;
     font-size: 1.125rem;
     font-weight: 600;
   }

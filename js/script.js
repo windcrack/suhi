@@ -8,28 +8,50 @@ $(document).ready(() =>{
 			htmlS = '<span class="show">' + html.substring(0, maxt) + '</span>';
 			text.html(htmlS + crop + htmlH);
 	});
-	let inputMain = document.querySelectorAll('.main'),
-		btnO = document.querySelector('.credit'),
-		btnN = document.querySelector('.no-credit');
-		console.log(inputMain);
-		console.log(btnO);
-		console.log(btnN);
-		for (let i = 0; i < inputMain.length; i++) {
-			if (inputMain[i] == "") {
-				btnO.disabled = true;
-				btnO.disabled = true;
+	let more = document.querySelectorAll('.more-opt'),
+		body = document.querySelector('body'),
+		des = document.querySelectorAll('.description'),
+		details = document.querySelectorAll('.detailed');
+		function hideMore(h){
+			for(let i = h; i < more.length; i++){
+				more[i].classList.remove('show');
+				more[i].classList.add('hide');
+				des[i].classList.add('show');
 			}
 		}
+		hideMore(0);
+		function showMore(s){
+			if (more[s].classList.contains('hide')) {
+				more[s].classList.remove('hide');
+				more[s].classList.add('show');
+				des[s].classList.add('hide');
+			}
+		}
+		body.addEventListener('click', e =>{
+			let target = e.target;
+			if (target && target.classList.contains('detailed')) {
+				for(let i = 0; i < details.length; i++){
+					if (target == details[i]) {
+						hideMore(0);
+						showMore(i);
+					}
+				}
+			}
+		});
 	$('.show').click(function(){
 		$(this).parent('.description').addClass('moret');
 	});
 	$('.button-open').click(function(){
-		$('.side-menu').show();
+		$('.side-menu').addClass('move');
+		$('.content-in').show('300');
+		$('.side-menu').css('z-index', '999999');
 		$('.button-open').hide();
 	});
 	$('.button-close').click(function(){
-		$('.side-menu').hide();
+		$('.side-menu').removeClass('move');
+		$('.content-in').hide('300');
 		$('.button-open').show();
+		$('.side-menu').css('z-index', '0');
 	});
 	$(() =>{
 		$('#phone-mask').mask('+7(999) 999-99-99');
