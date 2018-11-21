@@ -9,9 +9,16 @@
 }
 .active-link-down{
 	color: $fcw;
-	text-decoration: underline !important;
+	border-bottom: 1px solid $fc;
+	line-height: .95;
 	font-size: 1.125rem;
 	font-weight: 300;
+	
+}
+.map, 
+.cash{
+	color: $fcw;
+	cursor: pointer;
 	&:hover{
 		color: $fcw;
 	}
@@ -29,7 +36,8 @@
 	text-align: center;
 	color: $fc;
 }
-.link-credits{
+.link-credits-one,
+.link-credits-two{
 	color: $fc;
 	a{
 		text-decoration: none !important;

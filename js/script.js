@@ -57,8 +57,6 @@ $(document).ready(() =>{
 		$('#phone-mask').mask('+7(999) 999-99-99');
 		$('#phone-mask-pick').mask('+7(999) 999-99-99');
 		$('#phone-reg').mask('+7(999) 999-99-99');
-		$('#hous').mask('99999',{placeholder: ""});
-		$('#app').mask('9999',{placeholder: ""});
 	});
 	$('.pick').click(() =>{
 		$('.delivery').css('display', 'none');
@@ -89,6 +87,17 @@ $(document).ready(() =>{
 		$('.map').addClass('active-link-down');
 		$('.cash').removeClass('active-link-down');
 	});
+	function menuScroll (){
+		let scrollStatus = $(document).scrollTop();
+		if (scrollStatus > 10) {
+			$('header').css({'position': 'fixed', 'z-index': '1000000'});
+		}else{
+			$('header').css('position', 'relative');
+		}
+	}
+	$(document).scroll(function(){
+		menuScroll();
+	});
 	// Слайдер
 	$('.text-slider').slick({
         adaptiveHeight: true,
@@ -98,7 +107,7 @@ $(document).ready(() =>{
         initialSlide: 1,
         slidesToShow: 3,
         slideToScroll: 1,
-        centerPadding: '10px',
+        centerPadding: '0px',
         centerMode: true,
         respondTo: 'window'
   	});

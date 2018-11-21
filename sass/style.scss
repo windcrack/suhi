@@ -50,6 +50,7 @@ header,
 		background-color: #181B23;
 		font-size: 0.5625rem;
 		color: $fcn;
+		clear: both;
 		.footer-text{
 			float: left;
 		}
@@ -150,6 +151,9 @@ header,
 		border: none;
 		background: #000;
 		z-index: 1000000;
+	}
+	.disabled{
+		display: none;
 	}
 	.button-close{
 		left: 51%;

@@ -82,41 +82,38 @@
 				<div class="col-4 link-def">Улица</div><div class="col"><input class="input-zakaz main" type="text" name="street" required></div>
 			</div>
 			<div class="row dop-opt">
-				<div class="offset-2">Дом<input class="input-zakaz ml-2 main" id="hous" type="text" name="hous" required></div>
-				<div class="ml-5">Кв<input class="input-zakaz ml-2 main" id="app" type="text" name="apartment" required></div>
+				<div class="offset-2">Дом<input class="input-zakaz ml-2 hous main" id="hous" type="text" name="hous" required></div>
+				<div class="ml-5">Кв<input class="input-zakaz ml-2 appt main" id="app" type="text" name="apartment" required></div>
 			</div>
 			<div class="row">
 				<p class="link-def ml-3">Комментарий:</p>
 				<textarea name="comment" class="comm-area m-auto" id="com" cols="36" rows="3" placeholder="Уточните пожалуйста подъезд, этаж, домофон или любую информацию которая поможет нам вас накормить :)"></textarea>
 			</div>
 			<div class="row mt-3 dop-opt">
-				<div class="col-3 text-center map active-link-down">Карта</div>
-				<div class="col-3 text-center cash">Наличными</div>
+				<div class="col-3 text-center"><a class="map active-link-down" href="#">Карта</a></div>
+				<div class="col-3 text-center"><a class="cash" href="#">Наличными</a></div>
 				<div class="col-6 text-center payment pt-1">К оплате:<span>00000</span>р.</div>
-			</div>
-			<div class="row float-right credit">
-				<a class="text-center link-credits" href="#"><p class="mr-5 pr-1 mt-3">Оплатить</p></a>
-			</div>
-			<div class="row float-right no-credit" style="display: none;">
-				<a class="no-credit text-center link-credits" href="#"><p class="mr-5 pr-1 mt-3">Заказать</p></a>
 			</div>
 		</div>
 		<!-- Само вывоз -->
 		<div class="container pickup" style="display: none;">
 			<div class="row">
-				<div class="col-4 link-def">Имя</div><div class="col"><input class="input-zakaz" type="text" name="name" required></div>
-				<div class="col-4 link-def">Телефон</div><div class="col"><input class="input-zakaz" id="phone-mask-pick" type="phone" name="phone" required></div>
+				<div class="col-4 link-def">Имя</div><div class="col"><input class="input-zakaz no-main" type="text" name="name" required></div>
+				<div class="col-4 link-def">Телефон</div><div class="col"><input class="input-zakaz no-main" id="phone-mask-pick" type="phone" name="phone" required></div>
 			</div>
 			<div class="row mt-5">
 				<div class="">
 					<p class="address ml-4 mr-2">Ждем вас круглосуточно по адресу Ул.Крупской, д.41А</p>
 				</div>
 			</div>
-			<div class="row float-right credit" style="display: none;">
-				<a  class="text-center link-credits" href="#"><p class="mr-5 pr-1 mt-3">Оплатить</p></a>
+		</div>
+		<div class="container">
+			<div class="row float-right credit">
+				<p class="mr-5 pr-1 mt-3 link-credits-one text-center">Оплатить</p>
+
 			</div>
-			<div class="row float-right no-credit">
-				<a class="no-credit text-center link-credits" href="#"><p class="mr-5 pr-1 mt-3">Заказать</p></a>
+			<div class="row float-right no-credit" style="display: none;">
+				<p class="mr-5 pr-1 mt-3 link-credits-two text-center">Заказать</p>
 			</div>
 		</div>
 		<footer>
@@ -147,5 +144,6 @@
 		<script src="slick/slick.min.js"></script>
 		<script src="js/jquery.maskedinput.js"></script>
 	  	<script src="js/script.js"></script>
+	  	<script src="js/valid.js"></script>
 	</body>
 </html>

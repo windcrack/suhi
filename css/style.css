@@ -54,6 +54,7 @@ header,
     background-color: #181B23;
     font-size: 0.5625rem;
     color: #FDAD1E;
+    clear: both;
   }
   footer .footer-text {
     float: left;
@@ -162,6 +163,10 @@ header,
     border: none;
     background: #000;
     z-index: 1000000;
+  }
+
+  .disabled {
+    display: none;
   }
 
   .button-close {
@@ -307,11 +312,19 @@ header,
 
   .active-link-down {
     color: #E3E9CB;
-    text-decoration: underline !important;
+    border-bottom: 1px solid #F47810;
+    line-height: .95;
     font-size: 1.125rem;
     font-weight: 300;
   }
-  .active-link-down:hover {
+
+  .map,
+  .cash {
+    color: #E3E9CB;
+    cursor: pointer;
+  }
+  .map:hover,
+  .cash:hover {
     color: #E3E9CB;
   }
 
@@ -330,10 +343,12 @@ header,
     color: #F47810;
   }
 
-  .link-credits {
+  .link-credits-one,
+  .link-credits-two {
     color: #F47810;
   }
-  .link-credits a {
+  .link-credits-one a,
+  .link-credits-two a {
     text-decoration: none !important;
     color: #F47810 !important;
   }
