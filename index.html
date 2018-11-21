@@ -56,7 +56,7 @@
 				</div>
 				<div class="text-menu pt-3 pb-3">
 					<div class="text-slider">
-						<div><a href="#" class="text-center mr-3 active-menu">Маки</a></div>
+						<div><a href="#" class="text-center mr-3 active">Маки</a></div>
 						<div><a href="#" class="mr-3">Роллы</a></div>
 						<div><a href="#" class="mr-3">Гунканы</a></div>
 						<div><a href="#" class="mr-3">Тёплые роллы</a></div>
@@ -100,7 +100,8 @@
 			</div>
 		</div>
 		<div class="container price-main mt-2">
-			<div class="row anchor mt-3 mb-4 ml-2">Маки</div>
+			<div class="row anchor mt-3 mb-4 ml-2" id="maki">Маки</div>
+			<selection ></selection>	
 			<!-- Каточка товара -->
 			<div class="row mt-3">
 				<div class="col-6 description-img">
@@ -189,6 +190,12 @@
 		<script src="js/jquery-migrate-1.2.1.min.js"></script>
 		<script src="slick/slick.min.js"></script>
 		<script src="js/jquery.maskedinput.js"></script>
+		<script src="js/jquery.changeActiveNav.min.js"></script>
+		<script>
+			$(document).ready(function(){
+				$('.text-menu').changeActiveNav();
+			});
+		</script>
 	  	<script src="js/script.js"></script>
 	</body>
 </html>

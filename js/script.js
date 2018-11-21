@@ -87,14 +87,14 @@ $(document).ready(() =>{
 		$('.map').addClass('active-link-down');
 		$('.cash').removeClass('active-link-down');
 	});
-	function menuScroll (){
-		let scrollStatus = $(document).scrollTop();
-		if (scrollStatus > 10) {
-			$('header').css({'position': 'fixed', 'z-index': '1000000'});
-		}else{
-			$('header').css('position', 'relative');
-		}
-	}
+	// function menuScroll (){
+	// 	let scrollStatus = $(document).scrollTop();
+	// 	if (scrollStatus > 10) {
+	// 		$('header').css({'position': 'fixed', 'z-index': '1000000'});
+	// 	}else{
+	// 		$('header').css('position', 'relative');
+	// 	}
+	// }
 	$(document).scroll(function(){
 		menuScroll();
 	});
