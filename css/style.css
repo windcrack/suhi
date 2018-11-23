@@ -70,10 +70,6 @@ header,
     float: left;
   }
 
-  a.active {
-    color: #F47810 !important;
-  }
-
   .cart {
     float: right;
     color: #F47810;
@@ -94,9 +90,14 @@ header,
     align-items: center;
     align-content: center;
   }
-  .text-slider a {
+
+  a {
     color: #E3E9CB;
     text-align: center;
+  }
+
+  .active a {
+    color: #F47810 !important;
   }
 
   .in-fixed {
