@@ -58,19 +58,26 @@ header,
 	header{
 		background: #000;
 		border-bottom: 1px solid $fc;
+
 	}
 	.logo{
 		padding: 0.75rem 0 0 1.14rem;
 		float: left;
 	}
-	.active{
+	a.active{
 		color: $fc !important;
 	}
 	.cart{
 		float: right;
 		color: $fc;
 		display: flex;
-		// margin-top: 1rem;
+	}
+	.menu-fixed{
+		position: fixed;
+		max-width: 100%;
+		z-index: 5;
+		margin: auto;
+		// margin-top: -3rem;
 	}
 	.text-slider{
 		display: flex;
@@ -83,8 +90,9 @@ header,
 			text-align: center;
 		}
 	}
-	.slider-main{
-		// margin-top: -1rem;
+	.in-fixed{
+		width: 100vw;
+		margin-top: -3rem;
 	}
 	.more-opt{
 		font-size: 0.812rem;
@@ -148,15 +156,15 @@ header,
 	.button-close{
 		position: fixed;
 		top: 38.1%;
+		background-color: transparent;
 		border: none;
-		background: #000;
-		z-index: 1000000;
+		z-index: 100;
 	}
 	.disabled{
 		display: none;
 	}
 	.button-close{
-		left: 51%;
+		left: 50%;
 	}
 	.numb{
 		width: 2.5rem;

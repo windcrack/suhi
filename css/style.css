@@ -70,7 +70,7 @@ header,
     float: left;
   }
 
-  .active-menu {
+  a.active {
     color: #F47810 !important;
   }
 
@@ -78,6 +78,13 @@ header,
     float: right;
     color: #F47810;
     display: flex;
+  }
+
+  .menu-fixed {
+    position: fixed;
+    max-width: 100%;
+    z-index: 5;
+    margin: auto;
   }
 
   .text-slider {
@@ -90,6 +97,11 @@ header,
   .text-slider a {
     color: #E3E9CB;
     text-align: center;
+  }
+
+  .in-fixed {
+    width: 100vw;
+    margin-top: -3rem;
   }
 
   .more-opt {
@@ -160,9 +172,9 @@ header,
   .button-close {
     position: fixed;
     top: 38.1%;
+    background-color: transparent;
     border: none;
-    background: #000;
-    z-index: 1000000;
+    z-index: 100;
   }
 
   .disabled {
@@ -170,7 +182,7 @@ header,
   }
 
   .button-close {
-    left: 51%;
+    left: 50%;
   }
 
   .numb {
@@ -298,6 +310,11 @@ header,
     background-color: transparent;
     width: 78%;
     color: #E3E9CB;
+  }
+
+  .btn-text {
+    max-width: 100%;
+    margin-right: 1.5rem !important;
   }
 
   .active-link {

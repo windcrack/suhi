@@ -1,3 +1,4 @@
+// Cart
 .button-cart{
 	background-color: $fc;
 	border-radius: 1rem;
@@ -27,4 +28,8 @@
 	background-color: transparent;
 	width: 78%;
 	color: #E3E9CB;
+}
+.btn-text{
+	max-width: 100%;
+	margin-right: 1.5rem !important;
 }
