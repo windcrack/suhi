@@ -70,7 +70,7 @@ header,
 		display: flex;
 	}
 	.menu-fixed{
-		position: fixed;
+		position: sticky;
 		max-width: 100%;
 		z-index: 5;
 		margin: auto;
@@ -178,7 +178,7 @@ header,
 		height: 100%;
 		width: 0;
 		opacity: 0;
-	    transition: 2s;
+	    transition: 1s;
 		justify-content: center;
 		align-items: center;
 		flex-wrap: wrap;
