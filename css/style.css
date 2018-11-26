@@ -109,6 +109,9 @@ header,
   .more-opt {
     font-size: 0.812rem;
   }
+  .more-opt p:last-child {
+    margin-bottom: 0 !important;
+  }
 
   .anchor {
     color: #E3E9CB;

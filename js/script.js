@@ -15,6 +15,7 @@ $(document).ready(() =>{
 		function hideMore(h){
 			for(let i = h; i < more.length; i++){
 				more[i].classList.remove('show');
+				des[i].classList.remove('hide');
 				more[i].classList.add('hide');
 				des[i].classList.add('show');
 			}

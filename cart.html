@@ -72,7 +72,7 @@
 		<div class="container">
 			<div class="row anchor mt-5 mb-4 ml-2 mb-5">Ваша корзина</div>
 			<div class="input-balls mb-5 mt-5">
-				<input type="text" class="balls" id="hous" placeholder="Введите баллы"><img src="img/btnapp.svg" alt="Применить">
+				<input type="text" class="balls" id="hous" placeholder="Введите баллы" oninput="this.value=this.value.replace(/[^0-9+]/, '')"><img src="img/btnapp.svg" alt="Применить">
 			</div>
 			<!-- Каточка товара -->
 			<div class="row">
