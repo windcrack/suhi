@@ -20,6 +20,8 @@
 		<link href="css/style.css" rel="stylesheet">
 	</head>
 	<body>
+		<div class="site-wrapper">
+		<!-- Боковое меню -->
 		<button class="button-open"><img src="img/uhide.svg" alt="Открыть"></button>
 		<div class="side-menu text-left">
 			<div class="content-in">
@@ -31,7 +33,7 @@
 				</div>
 				<div class="site-block">
 					<a href="login.html"><p>Вход</p></a>
-					<a href=""><p>Акции и бонусы</p></a>
+					<a href="stock.html"><p>Акции и бонусы</p></a>
 					<a href=""><p>Доставка</p></a>
 					<a href="contact.html"><p>Контакты</p></a>
 				</div>
@@ -48,6 +50,7 @@
 				<button class="button-close"><img src="img/hide.svg" alt="Закрыть"></button>
 			</div>
 		</div>
+		<!-- Меню -->
 		<header>
 			<nav>
 				<a class="logo pr-4" href="index.html"><img src="img/logo.svg" alt="Хайтацу"></a>
@@ -56,181 +59,203 @@
 				</div>
 				<div class="text-menu pt-3 pb-3">
 					<div class="text-slider text-left" id="top-menu">
-						<div><a href="#maki" class="mr-3">Маки</a></div>
-						<div><a href="#roll" class="mr-3">Роллы</a></div>
-						<div><a href="#gunk" class="mr-3">Гунканы</a></div>
+						<div><a href="#group-1" class="mr-3">Маки</a></div>
+						<div><a href="#group-2" class="mr-3">Роллы</a></div>
+						<!-- <div><a href="#gunk" class="mr-3">Гунканы</a></div>
 						<div><a href="#hot" class="mr-3">Тёплые роллы</a></div>
 						<div><a href="#pizza" class="mr-3">Пицца</a></div>
 						<div><a href="#soups" class="mr-3">Супы</a></div>
 						<div><a href="#salads" class="mr-3">Салаты</a></div>
 						<div><a href="#hotbl" class="mr-3">Горячие блюда</a></div>
-						<!-- <div><a href="#cold" class="mr-3">Холодные напитки</a></div> -->
+						<div><a href="#cold" class="mr-3">Холодные напитки</a></div> -->
 					</div>
 				</div>
 			</nav>
 		</header>
+		<!-- меню закончилось -->
 		<div class="slider-main">
 			<div><img src="img/slide1.png" alt="Акции"></div>
 			<div><img src="img/slide1.png" alt="Акции"></div>
 			<div><img src="img/slide1.png" alt="Акции"></div>
 		</div>
+
 		<!-- Слайдер 2 -->
-		<p class="text-center cart-header mt-5">Блюдо дня</p>
-		<div class="next-towar text-center">
-			<div class="m-auto pt-2">
-				<p>Рыбное ассорти</p>
-				<p>130р</p>
-				<img class="m-auto" src="img/cart-s1.png" alt="Акции">
-				<p>Осталось: <span class="numder-color">5</span></p>
-				<a href="#"><img class="m-auto pt-2" src="img/incart.svg" alt="В корзину"></a>
-			</div>
-			<div class="m-auto pt-2">
-				<p>Дайномато</p>
-				<p>130р</p>
-				<img class="m-auto" src="img/cart-s2.png" alt="Акции">
-				<p>Осталось: <span class="numder-color">3</span></p>
-				<a href="#"><img class="m-auto pt-2" src="img/incart.svg" alt="В корзину"></a>
-			</div>
-			<div class="m-auto pt-2">
-				<p>Акари</p>
-				<p>130р</p>
-				<img class="m-auto" src="img/cart-s3.png" alt="Акции">
-				<p>Осталось: <span class="numder-color">8</span></p>
-				<a href="#"><img class="m-auto pt-2" src="img/incart.svg" alt="В корзину"></a>
-			</div>
-			<div class="m-auto pt-2">
-				<p>Акари</p>
-				<p>130р</p>
-				<img class="m-auto" src="img/cart-s3.png" alt="Акции">
-				<p>Осталось: <span class="numder-color">8</span></p>
-				<a href="#"><img class="m-auto pt-2" src="img/incart.svg" alt="В корзину"></a>
-			</div>
-		</div>
-		<div class="container price-main mt-2">
-			<div class="row anchor mt-3 mb-4 ml-2"><a id="maki">Маки</a></div>
-			<!-- Каточка товара -->
-			<div class="row mt-3">
-				<div class="col-6 description-img">
-					<img src="img/towar1.png" alt="Суши">
-				</div>
-				<div class="col-6 description-text">
-					<p class="header pb-1 ml-2">Авокадо <img class="detailed" src="img/q.svg" alt="Вопросик"></p>
-					<div class="description">
-						<p class="pt-2 pb-2">Классический японский ролл со свежим авокадо и кунжутом Классический японский ролл со свежим авокадо и кунжутом</p>
+		<div class="container">
+			<h2 class="text-center block-header mt-5">Блюдо дня</h2>
+			<div class="next-towar text-center pt-2">
+				<div class="col-4 p-0 sale-product">
+					<h3 class="sale-product-title">Рыбное ассорти</h3>
+					<p class="sale-price">130р</p>
+					<div class="pl-2 pr-2">
+						<img class="m-auto" src="img/cart-s1.png" alt="Акции">
 					</div>
-					<div class="pt-1 pb-1 more-opt"><p>Калории: 180</p><p>Состав: Рис, нори, авокадо.</p></div>
-					<p class="pt-3"><span class="more">150г.</span><span class="price pr-2">120р.</span><a href="#"><img src="img/incart.svg" alt="В корзину"></a></p>
+					<p class="count">Осталось: <span class="numder-color">5</span></p>
+					<a href="#" class="badge badge-warning p-3 cart-btn">В корзину</a>
 				</div>
-			</div>
-			<!-- Конец -->
-			<!-- Каточка товара -->
-			<div class="row mt-3">
-				<div class="col-6 description-img">
-					<img src="img/towar2.png" alt="Суши">
-				</div>
-				<div class="col-6 description-text mt-1 justify-content-center">
-					<p class="header pb-1 pl-1">Дайномато<img class="detailed" src="img/q.svg" alt="Вопросик"></p>
-					<div class="description">
-						<p class="pt-2 pb-2">Ролл с угрем и креветкой посыпанный икрой Тобико</p>
+				<div class="col-4 p-0 sale-product">
+					<h3 class="sale-product-title">Рыбное ассорти</h3>
+					<p class="sale-price">130р</p>
+					<div class="pl-2 pr-2">
+						<img class="m-auto" src="img/cart-s1.png" alt="Акции">
 					</div>
-					<div class="pt-1 pb-1 more-opt"><p>Калории: 180</p><p>Состав: Рис, нори, авокадо.</p></div>
-					<p class="pt-3"><span class="more">150г.</span><span class="price pr-2">120р.</span><a href="#"><img src="img/incart.svg" alt="В корзину"></a></p>
+					<p class="count">Осталось: <span class="numder-color">5</span></p>
+					<a href="#" class="badge badge-warning p-3 cart-btn">В корзину</a>
 				</div>
-			</div>
-			<!-- Конец -->
-			<!-- Каточка товара -->
-			<div class="row mt-3">
-				<div class="col-6 description-img">
-					<img src="img/towar3.png" alt="Суши">
-				</div>
-				<div class="col-6 description-text mt-1 justify-content-center">
-					<p class="header pb-1 pl-1">Комбу<img class="detailed" src="img/q.svg" alt="Вопросик"></p>
-					<div class="description">
-						<p class="pt-2 pb-2">Необычный остренький ролл с лососем, тунцом и огурцом.</p>
+				<div class="col-4 p-0 sale-product">
+					<h3 class="sale-product-title">Рыбное ассорти</h3>
+					<p class="sale-price">130р</p>
+					<div class="pl-2 pr-2">
+						<img class="m-auto" src="img/cart-s1.png" alt="Акции">
 					</div>
-					<div class="pt-1 pb-2 more-opt"><p>Калории: 180</p><p>Состав: Рис, нори, авокадо.</p></div>
-					<p class="pt-3"><span class="more">150г.</span><span class="price pr-2">120р.</span><a href="#"><img src="img/incart.svg" alt="В корзину"></a></p>
+					<p class="count">Осталось: <span class="numder-color">5</span></p>
+					<a href="#" class="badge badge-warning p-3 cart-btn">В корзину</a>
 				</div>
-			</div>
-			<!-- Конец -->
-			<!-- Каточка товара -->
-			<div class="row mt-3">
-				<div class="col-6 description-img">
-					<img src="img/towar4.png" alt="Суши">
-				</div>
-				<div class="col-6 description-text mt-1 justify-content-center">
-					<p class="header pb-1 pl-1">Акари<img class="detailed" src="img/q.svg" alt="Вопросик"></p>
-					<div class="description">
-						<p class="description pt-2 pb-2">Обёрнутый в королевские креветки ролл с угрём, помидором и нежным сливочным сыром.</p>
+				<div class="col-4 p-0 sale-product">
+					<h3 class="sale-product-title">Рыбное ассорти</h3>
+					<p class="sale-price">130р</p>
+					<div class="pl-2 pr-2">
+						<img class="m-auto" src="img/cart-s1.png" alt="Акции">
 					</div>
-					<div class="pt-1 pb-2 more-opt"><p>Калории: 180</p><p>Состав: Рис, нори, авокадо.</p></div>
-					<p class="pt-3"><span class="more">150г.</span><span class="price pr-2">120р.</span><a href="#"><img src="img/incart.svg" alt="В корзину"></a></p>
+					<p class="count">Осталось: <span class="numder-color">5</span></p>
+					<a href="#" class="badge badge-warning p-3 cart-btn">В корзину</a>
 				</div>
 			</div>
-			<!-- Конец -->
-		</div>
-		<div class="container price-main mt-2">
-			<div class="row anchor mt-3 mb-4 ml-2"><a id="roll">Ролы</a></div>
-			<!-- Каточка товара -->
-			<div class="row mt-3">
-				<div class="col-6 description-img">
-					<img src="img/towar1.png" alt="Суши">
-				</div>
-				<div class="col-6 description-text">
-					<p class="header pb-1 ml-2">Авокадо <img class="detailed" src="img/q.svg" alt="Вопросик"></p>
-					<div class="description">
-						<p class="pt-2 pb-2">Классический японский ролл со свежим авокадо и кунжутом Классический японский ролл со свежим авокадо и кунжутом</p>
+			<div class="groups">
+				<div class="group" id="group-1">
+					<h2 class="block-title">
+						Маки
+					</h2>
+					<div class="row">
+						<div class="col-lg-3 col-md-4 col-12">
+							<div class="row m-0">
+								<div class="col-md-12 col-5 p-0">
+									<img class="product-img" src="img/towar1.png" alt="Суши">
+								</div>
+								<div class="col-md-12 col-7 p-0">
+									<div class="product-details">
+										<div class="d-flex justify-content-between">
+											<h2 class="product-title">Авокадо</h2>
+											<img class="detailed" src="img/q.svg" alt="Вопросик">
+										</div>
+										<div class="description">
+											<p class="product-description">Классический японский ролл со свежим авокадо и кунжутом Классический японский ролл со свежим авокадо и кунжутом</p>
+										</div>
+										<div class="pt-1 pb-1 more-opt">
+											<p>Калории: 180</p>
+											<p>Состав: Рис, нори, авокадо.</p>
+										</div>
+										<p class="pt-3 product-price-block">
+											<span class="">
+												<span class="weight">1500 г.</span>
+												<span class="price">1200р.</span>
+											</span>
+											<span>
+												<a href="#" class="badge badge-warning cart-btn">В корзину</a>
+											</span>
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-4 col-12">
+							<div class="row m-0">
+								<div class="col-md-12 col-5 p-0">
+									<img class="product-img" src="img/towar1.png" alt="Суши">
+								</div>
+								<div class="col-md-12 col-7 p-0">
+									<div class="product-details">
+										<div class="d-flex justify-content-between">
+											<h2 class="product-title">Авокадо</h2>
+											<img class="detailed" src="img/q.svg" alt="Вопросик">
+										</div>
+										<div class="description">
+											<p class="product-description">Классический японский ролл со свежим авокадо и кунжутом Классический японский ролл со свежим</p>
+										</div>
+										<div class="pt-1 pb-1 more-opt">
+											<p>Калории: 180</p>
+											<p>Состав: Рис, нори, авокадо.</p>
+										</div>
+										<p class="pt-3 product-price-block">
+											<span class="">
+												<span class="weight">1500 г.</span>
+												<span class="price">1200р.</span>
+											</span>
+											<span>
+												<a href="#" class="badge badge-warning cart-btn">В корзину</a>
+											</span>
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-4 col-12">
+							<div class="row m-0">
+								<div class="col-md-12 col-5 p-0">
+									<img class="product-img" src="img/towar1.png" alt="Суши">
+								</div>
+								<div class="col-md-12 col-7 p-0">
+									<div class="product-details">
+										<div class="d-flex justify-content-between">
+											<h2 class="product-title">Авокадо</h2>
+											<img class="detailed" src="img/q.svg" alt="Вопросик">
+										</div>
+										<div class="description">
+											<p class="product-description">Классический японский ролл со свежим авокадо и кунжутом Классический</p>
+										</div>
+										<div class="pt-1 pb-1 more-opt">
+											<p>Калории: 180</p>
+											<p>Состав: Рис, нори, авокадо.</p>
+										</div>
+										<p class="pt-3 product-price-block">
+											<span class="">
+												<span class="weight">1500 г.</span>
+												<span class="price">1200р.</span>
+											</span>
+											<span>
+												<a href="#" class="badge badge-warning cart-btn">В корзину</a>
+											</span>
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-4 col-12">
+							<div class="row m-0">
+								<div class="col-md-12 col-5 p-0">
+									<img class="product-img" src="img/towar1.png" alt="Суши">
+								</div>
+								<div class="col-md-12 col-7 p-0">
+									<div class="product-details">
+										<div class="d-flex justify-content-between">
+											<h2 class="product-title">Авокадо</h2>
+											<img class="detailed" src="img/q.svg" alt="Вопросик">
+										</div>
+										<div class="description">
+											<p class="product-description">Классический японский ролл со свежим авокадо и</p>
+										</div>
+										<div class="pt-1 pb-1 more-opt">
+											<p>Калории: 180</p>
+											<p>Состав: Рис, нори, авокадо.</p>
+										</div>
+										<p class="pt-3 product-price-block">
+											<span class="">
+												<span class="weight">1500 г.</span>
+												<span class="price">1200р.</span>
+											</span>
+											<span>
+												<a href="#" class="badge badge-warning cart-btn">В корзину</a>
+											</span>
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
 					</div>
-					<div class="pt-1 pb-1 more-opt"><p>Калории: 180</p><p>Состав: Рис, нори, авокадо.</p></div>
-					<p class="pt-3"><span class="more">150г.</span><span class="price pr-2">120р.</span><a href="#"><img src="img/incart.svg" alt="В корзину"></a></p>
+					
+				</div>
+				<div class="group" id="group-2">				
 				</div>
 			</div>
-			<!-- Конец -->
-			<!-- Каточка товара -->
-			<div class="row mt-3">
-				<div class="col-6 description-img">
-					<img src="img/towar2.png" alt="Суши">
-				</div>
-				<div class="col-6 description-text mt-1 justify-content-center">
-					<p class="header pb-1 pl-1">Дайномато<img class="detailed" src="img/q.svg" alt="Вопросик"></p>
-					<div class="description">
-						<p class="pt-2 pb-2">Ролл с угрем и креветкой посыпанный икрой Тобико</p>
-					</div>
-					<div class="pt-1 pb-1 more-opt"><p>Калории: 180</p><p>Состав: Рис, нори, авокадо.</p></div>
-					<p class="pt-3"><span class="more">150г.</span><span class="price pr-2">120р.</span><a href="#"><img src="img/incart.svg" alt="В корзину"></a></p>
-				</div>
-			</div>
-			<!-- Конец -->
-			<!-- Каточка товара -->
-			<div class="row mt-3">
-				<div class="col-6 description-img">
-					<img src="img/towar3.png" alt="Суши">
-				</div>
-				<div class="col-6 description-text mt-1 justify-content-center">
-					<p class="header pb-1 pl-1">Комбу<img class="detailed" src="img/q.svg" alt="Вопросик"></p>
-					<div class="description">
-						<p class="pt-2 pb-2">Необычный остренький ролл с лососем, тунцом и огурцом.</p>
-					</div>
-					<div class="pt-1 pb-2 more-opt"><p>Калории: 180</p><p>Состав: Рис, нори, авокадо.</p></div>
-					<p class="pt-3"><span class="more">150г.</span><span class="price pr-2">120р.</span><a href="#"><img src="img/incart.svg" alt="В корзину"></a></p>
-				</div>
-			</div>
-			<!-- Конец -->
-			<!-- Каточка товара -->
-			<div class="row mt-3">
-				<div class="col-6 description-img">
-					<img src="img/towar4.png" alt="Суши">
-				</div>
-				<div class="col-6 description-text mt-1 justify-content-center">
-					<p class="header pb-1 pl-1">Акари<img class="detailed" src="img/q.svg" alt="Вопросик"></p>
-					<div class="description">
-						<p class="description pt-2 pb-2">Обёрнутый в королевские креветки ролл с угрём, помидором и нежным сливочным сыром.</p>
-					</div>
-					<div class="pt-1 pb-2 more-opt"><p>Калории: 180</p><p>Состав: Рис, нори, авокадо.</p></div>
-					<p class="pt-3"><span class="more">150г.</span><span class="price pr-2">120р.</span><a href="#"><img src="img/incart.svg" alt="В корзину"></a></p>
-				</div>
-			</div>
-			<!-- Конец -->
 		</div>
 		<footer class="mt-5">
 			<div class="container pt-2 pb-2">
@@ -252,6 +277,7 @@
 				</div>
 			</div>
 		</footer>
+		</div>
 		<!-- Bootstrap core JavaScript ================================================== -->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 		<script>window.jQuery || document.write('<script src="js/jquery-3.2.1.slim.min.js"><\/script>')</script>
