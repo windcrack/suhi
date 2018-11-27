@@ -1,12 +1,17 @@
 $(document).ready(() =>{
-	let maxt = 70,
-		crop = '<span class="crop">...</span>';
-	$('.description').each(function(){
-		let text = $(this),
-			html = text.html(),
-			htmlH = '<span class="hide">' + html.substring(maxt) + '</span>',
-			htmlS = '<span class="show">' + html.substring(0, maxt) + '</span>';
-			text.html(htmlS + crop + htmlH);
+	$(window).resize(function(){
+		width = $(window).width();
+		if (width <= 600) {
+			let maxt = 70,
+				crop = '<span class="crop">...</span>';
+			$('.description').each(function(){
+				let text = $(this),
+					html = text.html(),
+					htmlH = '<span class="hide">' + html.substring(maxt) + '</span>',
+					htmlS = '<span class="show">' + html.substring(0, maxt) + '</span>';
+					text.html(htmlS + crop + htmlH);
+			});
+		}	
 	});
 	let more = document.querySelectorAll('.more-opt'),
 		body = document.querySelector('body'),
@@ -119,11 +124,14 @@ $(document).ready(() =>{
       	autoplaySpeed: 3000
   	});
   	$('.next-towar').slick({
-	    adaptiveHeight: true,
       	arrows: false,
       	arrows: false,
       	initialSlide: 0,
         slidesToShow: 3,
         slideToScroll: 1
 	});
+	let next = document.querySelector('.next-towar'),
+		price = document.querySelector('.block-on-js');
+	$('.sale-product').css('height', next.clientHeight);
+	$('.product-description').css('height', price.clientHeight);
 });
