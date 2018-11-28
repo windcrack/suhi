@@ -9,7 +9,7 @@
 		<title>Суши, роллы - Стильный ресторан японской кухни в Смоленске «Хайтацу»</title>
 		<!-- Шрифты -->
 		<link href="https://fonts.googleapis.com/css?family=Roboto&amp;subset=cyrillic-ext" rel="stylesheet">
-		<link href="https://fonts.googleapis.com/css?family=Sawarabi+Gothic" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet"> 
 		<!-- Bootstrap core CSS -->
 		<link href="css/bootstrap.min.css" rel="stylesheet">
 		<link href="css/bootstrap-grid.min.css" rel="stylesheet">
@@ -48,10 +48,11 @@
 				<button class="button-close"><img src="img/hide.svg" alt="Закрыть"></button>
 			</div>
 		</div>
+		<div class="site-wrapper" id="panel">
 		<header>
 			<nav>
 				<a class="logo pr-4" href="index.html"><img src="img/logo.svg" alt="Хайтацу"></a>
-				<div class="cart ml-2 pt-3 pb-3">
+				<div class="menu-cart ml-2 pt-3 pb-3">
 					<img class="pr-1" src="img/Vector.svg" alt="Корзина"><a href="cart.html"><span class="numb t-color-me">00000</span><span class="pr-1 t-color-me">р.</span></a>
 				</div>
 				<div class="text-menu pt-3 pb-3">
@@ -69,73 +70,174 @@
 				</div>
 			</nav>
 		</header>
-		<div class="container">
-			<div class="row anchor mt-5 mb-4 ml-2 mb-5">Ваша корзина</div>
-			<div class="input-balls mb-5 mt-5">
-				<input type="text" class="balls" id="hous" placeholder="Введите баллы" oninput="this.value=this.value.replace(/[^0-9+]/, '')"><img src="img/btnapp.svg" alt="Применить">
-			</div>
-			<!-- Каточка товара -->
-			<div class="row">
-				<div class="col-4 description-img img-cart">
-					<img src="img/cart-t.png" alt="Приборы">
-				</div>
-				<div class="col-5 description-text">
-					<p class="header pb-1 ml-2">Количество приборов</p>
-				</div>
-				<div class="col-3 text-center">
-					<p class="pt-2 numder-color">0р.</p>
-					<p><a href="#"><img src="img/minus.svg" alt="Минус"></a><span class="ml-1 mr-1">1</span><a href="#"><img src="img/plus.svg" alt="Плюс"></a></p>
+		<form class="woocommerce-cart-form" action="">
+		<div class="container cart cart-additional mb-5">
+			<!-- Здесь бесплатные товары -->
+			<div class="group">
+				<div class="row">
+					<div class="col-lg-6 col-12 pr-lg-5 pb-5">
+						<div class="row m-0">
+							<div class="col-4 p-0">
+								<img class="product-img" src="img/towar1.png" alt="Суши">
+							</div>
+							<div class="col-8 pl-lg-4 pl-2 product-details pr-lg-5 pr-0 pb-md-3 pt-md-3">
+								<div class="d-flex justify-content-between">
+									<h2 class="product-title">Авокадо.</h2>
+									<a href="http://smol67.mrzuwz.beget.tech/cart/?remove_item=e4da3b7fbbce2345d7772b0674a318d5&amp;_wpnonce=2eb82fc57d" class="remove" aria-label="Удалить эту позицию" data-product_id="5" data-product_sku=""><span class="product-remove">×</span></a>
+								</div>
+								<div class="pt-3 product-price-block">
+									<span>
+										<span class="weight">1500 г.</span>
+										<span class="price">1200 р.</span>
+									</span>
+									<span>
+										<input type="number" id="quantity_5bfe4beb29564" class="input-text qty text" step="1" min="0" max="" name="cart[e4da3b7fbbce2345d7772b0674a318d5][qty]" value="2" title="Кол-во" size="4" pattern="[0-9]*" inputmode="numeric" aria-labelledby="Количество Мак 1">
+									</span>
+								</div>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>			
 		<!-- Конец -->
-		<div class="line-head"></div>
-		<div class="container">
-			<!-- Каточка товара -->
-			<div class="row mb-2 mt-3">
-				<div class="col-4 description-img img-cart">
-					<img src="img/cart-t1.png" alt="Приборы">
-				</div>
-				<div class="col-5 description-text">
-					<p class="header pb-1 ml-2">Авокадо</p>
-					<p class="ml-2">150г.</p>
-				</div>
-				<div class="col-3 text-center">
-					<p class="pt-2 numder-color">120р.</p>
-					<p><a href="#"><img src="img/minus.svg" alt="Минус"></a><span class="ml-1 mr-1">1</span><a href="#"><img src="img/plus.svg" alt="Плюс"></a></p>
+		
+		<div class="container cart-main cart woocommerce-cart-form__contents">
+			
+			<div class="group">
+				<div class="row">
+					<div class="col-lg-6 col-12 pr-lg-5 pb-5">
+						<div class="row m-0">
+							<div class="col-4 p-0">
+								<img class="product-img" src="img/towar1.png" alt="Суши">
+							</div>
+							<div class="col-8 pl-lg-4 pl-2 product-details pr-lg-5 pr-0 pb-md-3 pt-md-3">
+								<div class="d-flex justify-content-between">
+									<h2 class="product-title">Авокадо.</h2>
+									<a href="http://smol67.mrzuwz.beget.tech/cart/?remove_item=e4da3b7fbbce2345d7772b0674a318d5&amp;_wpnonce=2eb82fc57d" class="remove" aria-label="Удалить эту позицию" data-product_id="5" data-product_sku=""><span class="product-remove">×</span></a>
+								</div>
+								<div class="pt-3 product-price-block">
+									<span>
+										<span class="weight">1500 г.</span>
+										<span class="price">1200 р.</span>
+									</span>
+									<span>
+										<input type="number" id="quantity_5bfe4beb29564" class="input-text qty text" step="1" min="0" max="" name="cart[e4da3b7fbbce2345d7772b0674a318d5][qty]" value="2" title="Кол-во" size="4" pattern="[0-9]*" inputmode="numeric" aria-labelledby="Количество Мак 1">
+									</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-6 col-12 pr-lg-5">
+						<div class="row m-0">
+							<div class="col-4 p-0">
+								<img class="product-img" src="img/towar1.png" alt="Суши">
+							</div>
+							<div class="col-8 pl-4 pr-0 product-details pr-lg-5">
+								<div class="d-flex justify-content-between">
+									<h2 class="product-title">Авокадо</h2>
+									<a href="http://smol67.mrzuwz.beget.tech/cart/?remove_item=e4da3b7fbbce2345d7772b0674a318d5&amp;_wpnonce=2eb82fc57d" class="remove" aria-label="Удалить эту позицию" data-product_id="5" data-product_sku=""><span class="product-remove">×</span></a>
+								</div>
+								<div class="pt-3 product-price-block">
+										<span class="weight">1500 г.</span>
+										<span class="price">1200 р.</span>
+									<span>
+										<input type="number" id="quantity_5bfe4beb29564" class="input-text qty text" step="1" min="0" max="" name="cart[e4da3b7fbbce2345d7772b0674a318d5][qty]" value="2" title="Кол-во" size="4" pattern="[0-9]*" inputmode="numeric" aria-labelledby="Количество Мак 1">
+									</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-6 col-12 pr-lg-5">
+						<div class="row m-0">
+							<div class="col-4 p-0">
+								<img class="product-img" src="img/towar1.png" alt="Суши">
+							</div>
+							<div class="col-8 pl-4 pr-0 product-details pr-lg-5">
+								<div class="d-flex justify-content-between">
+									<h2 class="product-title">Авокадо</h2>
+									<a href="http://smol67.mrzuwz.beget.tech/cart/?remove_item=e4da3b7fbbce2345d7772b0674a318d5&amp;_wpnonce=2eb82fc57d" class="remove" aria-label="Удалить эту позицию" data-product_id="5" data-product_sku=""><span class="product-remove">×</span></a>
+								</div>
+								<div class="pt-3 product-price-block">
+										<span class="weight">1500 г.</span>
+										<span class="price">1200 р.</span>
+									<span>
+										<input type="number" id="quantity_5bfe4beb29564" class="input-text qty text" step="1" min="0" max="" name="cart[e4da3b7fbbce2345d7772b0674a318d5][qty]" value="2" title="Кол-во" size="4" pattern="[0-9]*" inputmode="numeric" aria-labelledby="Количество Мак 1">
+									</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-6 col-12 pr-lg-5">
+						<div class="row m-0">
+							<div class="col-4 p-0">
+								<img class="product-img" src="img/towar1.png" alt="Суши">
+							</div>
+							<div class="col-8 pl-4 pr-0 product-details pr-lg-5">
+								<div class="d-flex justify-content-between">
+									<h2 class="product-title">Авокадо</h2>
+									<a href="http://smol67.mrzuwz.beget.tech/cart/?remove_item=e4da3b7fbbce2345d7772b0674a318d5&amp;_wpnonce=2eb82fc57d" class="remove" aria-label="Удалить эту позицию" data-product_id="5" data-product_sku=""><span class="product-remove">×</span></a>
+								</div>
+								<div class="pt-3 product-price-block">
+										<span class="weight">1500 г.</span>
+										<span class="price">1200 р.</span>
+									<span>
+										<input type="number" id="quantity_5bfe4beb29564" class="input-text qty text" step="1" min="0" max="" name="cart[e4da3b7fbbce2345d7772b0674a318d5][qty]" value="2" title="Кол-во" size="4" pattern="[0-9]*" inputmode="numeric" aria-labelledby="Количество Мак 1">
+									</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-6 col-12 pr-lg-5">
+						<div class="row m-0">
+							<div class="col-4 p-0">
+								<img class="product-img" src="img/towar1.png" alt="Суши">
+							</div>
+							<div class="col-8 pl-4 pr-0 product-details pr-lg-5">
+								<div class="d-flex justify-content-between">
+									<h2 class="product-title">Авокадо</h2>
+									<a href="http://smol67.mrzuwz.beget.tech/cart/?remove_item=e4da3b7fbbce2345d7772b0674a318d5&amp;_wpnonce=2eb82fc57d" class="remove" aria-label="Удалить эту позицию" data-product_id="5" data-product_sku=""><span class="product-remove">×</span></a>
+								</div>
+								<div class="pt-3 product-price-block">
+										<span class="weight">1500 г.</span>
+										<span class="price">1200 р.</span>
+									<span>
+										<input type="number" id="quantity_5bfe4beb29564" class="input-text qty text" step="1" min="0" max="" name="cart[e4da3b7fbbce2345d7772b0674a318d5][qty]" value="2" title="Кол-во" size="4" pattern="[0-9]*" inputmode="numeric" aria-labelledby="Количество Мак 1">
+									</span>
+								</div>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
-			<!-- Конец -->
-			<!-- Каточка товара -->
-			<div class="row mb-2">
-				<div class="col-4 description-img img-cart">
-					<img src="img/cart-t2.png" alt="Приборы">
+			<div class="row cart-totals pt-5">
+				<div class="col-lg-6 col-12 ">
+					<div class="cart-bonus-points">
+						<div class="info">
+							<span class="points-title">Ваши баллы:</span>
+							<span class="points">00000</span>
+						</div>
+						<div class="input-group">
+							<input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2">
+							<div class="input-group-append">
+								<button class="input-group-text badge badge-warning bonus-btn pl-3 pr-3">Применить</button>
+							</div>
+						</div>
+					</div>
 				</div>
-				<div class="col-5 description-text">
-					<p class="header pb-1 ml-2">Дайномато</p>
-					<p class="ml-2">150г.</p>
-				</div>
-				<div class="col-3 text-center">
-					<p class="pt-2 numder-color">120р.</p>
-					<p><a href="#"><img src="img/minus.svg" alt="Минус"></a><span class="ml-1 mr-1">1</span><a href="#"><img src="img/plus.svg" alt="Плюс"></a></p>
-				</div>
-			</div>
-			<!-- Конец -->
-			<!-- Каточка товара -->
-			<div class="row mb-2">
-				<div class="col-4 description-img img-cart">
-					<img src="img/cart-t3.png" alt="Приборы">
-				</div>
-				<div class="col-5 description-text">
-					<p class="header pb-1 ml-2">Комбу</p>
-					<p class="ml-2">150г.</p>
-				</div>
-				<div class="col-3 text-center">
-					<p class="pt-2 numder-color">120р.</p>
-					<p><a href="#"><img src="img/minus.svg" alt="Минус"></a><span class="ml-1 mr-1">1</span><a href="#"><img src="img/plus.svg" alt="Плюс"></a></p>
+				<div class="col-lg-6 col-12">
+					<div class="processed-checkout">
+					<span class="total pr-2">
+						<span class="total-label">Итого:</span>
+						<span class="total-value">999999 </span>
+						<span>р.</span>
+					</span>
+						<button class="badge badge-warning cart-btn">Оформить заказ</button>
+					</div>
 				</div>
 			</div>
-			<!-- Конец -->
+		</div>
+	</form>
 			<!-- Слайдер -->
 			<p class="text-center cart-header mt-5 pt-5">Блюдо дня</p>
 			<div class="next-towar text-center pb-5 mb-5">
@@ -162,6 +264,7 @@
 				</div>
 			</div>
 		</div>
+	</div>
 		<footer>
 			<div class="container pt-2 pb-2">
 				<div class="row">

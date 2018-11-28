@@ -9,7 +9,7 @@
 		<title>Суши, роллы - Стильный ресторан японской кухни в Смоленске «Хайтацу»</title>
 		<!-- Шрифты -->
 		<link href="https://fonts.googleapis.com/css?family=Roboto&amp;subset=cyrillic-ext" rel="stylesheet">
-		<link href="https://fonts.googleapis.com/css?family=Sawarabi+Gothic" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
 		<!-- Bootstrap core CSS -->
 		<link href="css/bootstrap.min.css" rel="stylesheet">
 		<link href="css/bootstrap-grid.min.css" rel="stylesheet">
@@ -18,46 +18,47 @@
 		<link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
 		<!-- Мои стили -->
 		<link href="css/style.css" rel="stylesheet">
-		<!-- <link href="css/left-nav-style.css" rel="stylesheet"> -->
-		<!-- <link href="css/style-nav.css" rel="stylesheet"> -->
+		<link rel="stylesheet" href="slideout/index.css">
 	</head>
 	<body>
-		<div class="site-wrapper">
-		<!-- Боковое меню -->
-			
-		<!-- <button class="button-open"><img src="img/uhide.svg" alt="Открыть"></button>
-		<div class="side-menu text-left">
-			<div class="content-in">
-				<p class="head-text">Абдульмахалаш Фамили...</p>
-				<p class="head-text pb-1"><span>0</span><span> баллов</span></p>
-				<div class="line-head mt-1"></div>	
-				<div class="site-block-call">
-					<a href="tel:88005553535"><img class="ml-1" src="img/callme.svg" alt="Позвонить нам"></a>
-				</div>
-				<div class="site-block">
-					<a href="login.html"><p>Вход</p></a>
-					<a href="stock.html"><p>Акции и бонусы</p></a>
-					<a href=""><p>Доставка</p></a>
-					<a href="contact.html"><p>Контакты</p></a>
-				</div>
-				<div class="social-block">
-					<div class="h-2">Подписатся:</div>
-					<div class="social">
-						<div class="row social-icon">
-							<a href="" target="_blank"><img src="img/vk.svg" alt="В контакте"></a>
-							<a href="" target="_blank"><img src="img/ok.svg" alt="Однокласники"></a>
-							<a href="" target="_blank"><img src="img/inst.svg" alt="Инстаграмм"></a>
+		<nav id="menu">
+			<div class="text-left">
+				<div class="content-in">
+					<p class="head-text">Абдульмахалаш Фамили...</p>
+					<p class="head-text pb-1"><span>0</span><span> баллов</span></p>
+					<div class="line-head mt-1"></div>	
+					<div class="site-block-call">
+						<a href="tel:88005553535"><img class="ml-1" src="img/callme.svg" alt="Позвонить нам"></a>
+					</div>
+					<div class="site-block">
+						<a href="login.html"><p>Вход</p></a>
+						<a href="stock.html"><p>Акции и бонусы</p></a>
+						<a href=""><p>Доставка</p></a>
+						<a href="contact.html"><p>Контакты</p></a>
+					</div>
+					<div class="social-block">
+						<div class="h-2">Подписатся:</div>
+						<div class="social">
+							<div class="row social-icon">
+								<a href="" target="_blank"><img src="img/vk.svg" alt="В контакте"></a>
+								<a href="" target="_blank"><img src="img/ok.svg" alt="Однокласники"></a>
+								<a href="" target="_blank"><img src="img/inst.svg" alt="Инстаграмм"></a>
+							</div>
 						</div>
 					</div>
+					<button class="button-close"><img src="img/hide.svg" alt="Закрыть"></button>
 				</div>
-				<button class="button-close"><img src="img/hide.svg" alt="Закрыть"></button>
 			</div>
-		</div> -->
+		</nav>
+		<div class="site-wrapper" id="panel">
+		<!-- Боковое меню -->
+		<!-- <button class="button-open"><img src="img/uhide.svg" alt="Открыть"></button>
+		 -->
 		<!-- Меню -->
 		<header>
 			<nav>
 				<a class="logo pr-4" href="index.html"><img src="img/logo.svg" alt="Хайтацу"></a>
-				<div class="cart ml-2 pt-3 pb-3">
+				<div class="menu-cart ml-2 pt-3 pb-3">
 					<img class="pr-1" src="img/Vector.svg" alt="Корзина"><a href="cart.html"><span class="numb t-color-me">00000</span><span class="pr-1 t-color-me">р.</span></a>
 				</div>
 				<div class="text-menu pt-3 pb-3">
@@ -291,6 +292,15 @@
 		<script src="slick/slick.min.js"></script>
 		<script src="js/jquery.maskedinput.js"></script>
 		<script src="js/scrollActive.js"></script>
+		<script src="slideout/dist/slideout.min.js"></script>
+		<script>
+			let slideout = new Slideout({
+				'panel': document.querySelector('#panel'),
+				'menu' : document.querySelector('#menu'),
+				'padding': 256,
+				'tolertance': 70
+			});
+		</script>
 	  	<script src="js/script.js"></script>
 	</body>
 </html>

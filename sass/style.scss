@@ -3,7 +3,7 @@ $fcw: #E3E9CB;
 $fcn: #FDAD1E;
 $fns: 1.625rem;
 $font: 'Roboto', sans-serif;
-$fontO: 'Sawarabi Gothic', sans-serif;
+$fontO: 'Comfortaa', cursive;
 *{
 	margin: 0;
 	padding: 0;
@@ -46,13 +46,17 @@ h6{
 	.count{
 		font-size: $fns - 0.125rem;
 	}
+	img{
+		border-radius: 100%;
+		border: solid 1px $fc;
+	}
 }
 .cart-btn{
 	font-size: $fns - 0.25rem;
 	padding: 0.75rem 1.25rem;
 	border-radius: 0.625rem;
 	&.badge-warning{
-		background-color: #FDAD1E !important;
+		background-color: $fcn !important;
 	}
 }
 .block-on-js{
@@ -62,6 +66,7 @@ h6{
 .group{
 	.product-title{
 		font-size: $fns;
+		font-family: $fontO;
 	}
 	.product-description{
 		font-size: $fns - 0.5rem;
@@ -93,12 +98,12 @@ h6{
 	max-width: 38px;	
 }
 
-.show{
-	display: block;
-}
-.hide{
-	display: none;
-}
+// .show{
+// 	display: block;
+// }
+// .hide{
+// 	display: none;
+// }
 header,
 .logo,
 .slider-main,
@@ -130,7 +135,7 @@ header{
 	padding: 0.75rem 0 0 1.14rem;
 	float: left;
 }
-.cart{
+.menu-cart{
 	float: right;
 	color: $fc;
 	display: flex;
@@ -281,11 +286,7 @@ a{
 	color: $fc;
 	padding: 0.5rem 0 0 1rem;
 }
-.line-head{
-	background-color: $fc;
-	width: 100%;
-	height: 1px;
-}
+
 .social-block{
 	position: relative;
 	font-weight: 600;
@@ -351,7 +352,7 @@ a{
 			padding: 0;
 		}
 		.product-title{
-			font-size: $fns;
+			font-size: $fns - 0.5rem;
 		}
 		.product-description{
 			font-size: $fns - 0.5rem - 0.375rem;
@@ -371,17 +372,37 @@ a{
 		}
 	}
 	.product-details{
-		margin-left: .75rem;
+		padding-left: .75rem;
 		padding-top: initial;
 	}
 	.cart-btn{
-		padding: .75rem 1.25rem;
+		padding: .75rem 0.75rem;
 		font-size: $fns - 0.8125rem;
 	}
 	.detailed{
 		padding: 0.25rem;
 		max-width: 2rem;
 		margin-top: -0.375rem;	
+	}
+	.cart{
+		.group{
+			.product-title{
+				font-size: $fns - 0.5rem;
+			}
+			.product-price-block{
+				.weight{
+					// font-size: $fns - 0.5rem - 0.375rem;
+				}
+				.price{
+					font-size: $fns - 0.375rem;
+				}
+			}
+		}
+	}
+	.cart-totals{
+		.info{
+			font-size: 0.75em;
+		}
 	}
 }
 // Конец игры или мира
