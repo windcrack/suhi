@@ -98,12 +98,12 @@ h6{
 	max-width: 38px;	
 }
 
-// .show{
-// 	display: block;
-// }
-// .hide{
-// 	display: none;
-// }
+.show{
+	display: block;
+}
+.hide{
+	display: none;
+}
 header,
 .logo,
 .slider-main,
@@ -154,6 +154,16 @@ header{
 	justify-content: center;
 	align-items: center;
 	align-content: center;
+	a{
+		margin: 0 auto;
+		display: flex;
+		align-items: center;
+	}
+}
+.text-menu{
+	.slick-track{
+		width: auto !important;
+	}
 }
 a{	
 	color: $fcw;
@@ -321,7 +331,9 @@ a{
 	justify-content: center;
 	align-items: center
 }
+// Корзина
 @import 'cart';
+// checkout
 @import 'zakaz';
 
 // Постмотреть размеры остальных экранов
@@ -402,6 +414,11 @@ a{
 	.cart-totals{
 		.info{
 			font-size: 0.75em;
+		}
+	}
+	.text-menu{
+		.slick-track{
+			width: 50000px !important;
 		}
 	}
 }

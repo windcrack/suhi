@@ -1,6 +1,6 @@
 $(document).ready(() =>{
 	$(window).resize(function(){
-		width = $(window).width();
+		let width = $(window).width();
 		if (width <= 600) {
 			let maxt = 70,
 				crop = '<span class="crop">...</span>';
@@ -106,16 +106,26 @@ $(document).ready(() =>{
 	});
 	// Слайдер
 	$('.text-slider').slick({
-        adaptiveHeight: true,
         arrows: false,
         variableWidth: true,
         dots: false,
-        initialSlide: 1,
-        slidesToShow: 3,
-        slideToScroll: 1,
+        infinite: false,
         centerPadding: '0px',
-        centerMode: true,
-        respondTo: 'window'
+        responsive:[
+        	{
+        		breakpoint: 600,
+        		settings:{
+        			adaptiveHeight: true,
+			        arrows: false,
+			        variableWidth: true,
+			        dots: false,
+			        initialSlide: 0,
+			        slidesToShow: 3,
+			        slideToScroll: 1,
+			        centerPadding: '0px',
+        		}
+        	}
+        ]
   	});
   	$('.slider-main').slick({
       	adaptiveHeight: true,
