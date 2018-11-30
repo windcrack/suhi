@@ -1,16 +1,16 @@
 // Zakaz
 .active-link{
-	color: $fc;
+	color: $secondaryFontColor-dark;
 	text-decoration: underline !important;
 	font-size: 1.125rem;
 	font-weight: 600;
 	&:hover{
-		color: $fc;
+		color: $secondaryFontColor-dark;
 	}
 }
 .active-link-down{
-	color: $fcw;
-	border-bottom: 1px solid $fc;
+	color: $mainFontColor;
+	border-bottom: 1px solid $secondaryFontColor-dark;
 	line-height: .95;
 	font-size: 1.125rem;
 	font-weight: 300;
@@ -18,53 +18,61 @@
 }
 .map, 
 .cash{
-	color: $fcw;
+	color: $mainFontColor;
 	cursor: pointer;
 	&:hover{
-		color: $fcw;
+		color: $mainFontColor;
 	}
 }
 .link-def{
-	color: $fcw;
+	color: $mainFontColor;
 	font-size: 1.125rem;
 	font-weight: 600;
 }
 .input-zakaz{
 	background-color: rgba(99, 64, 2, 0.1);
 	border-radius: .5rem;
-	border: solid 1px $fc;
-	margin: 0 0 2rem 0;
+	border: solid 1px $secondaryFontColor-dark;
 	text-align: center;
-	color: $fc;
+	color: $secondaryFontColor-dark;
 }
 .link-credits-one,
 .link-credits-two{
-	color: $fc;
+	color: $secondaryFontColor-dark;
 	a{
 		text-decoration: none !important;
-		color: $fc !important;
+		color: $secondaryFontColor-dark !important;
 	}
 	
 }
 .dop-opt{
-	color: $fcw;
+	color: $mainFontColor;
 	font-size: 1.125rem;
 	font-weight: 300;
 	input{
-		width: 5rem;
-		float: right;
+		
 	}
 	.payment{
 		font-size: 0.875rem;
 	}
 }
 .comm-area{
-	border: solid 1px $fc;
-	color: $fcw;
+	border: solid 1px $secondaryFontColor-dark;
+	color: $mainFontColor;
 	background-color: rgba(99, 64, 2, 0.1);
 	font-size: 0.8125rem;
+	width: 100%;
 }
 .address{
-	color: $fcw;
+	color: $mainFontColor;
 	font-size: 0.875rem;
+}
+.checkout{
+	input{
+		width: 100%;
+		margin-bottom: 1.5rem;
+	}
+	.container{
+		max-width: 613px;
+	}
 }

@@ -70,45 +70,101 @@
 				</div>
 			</nav>
 		</header>
-		<div class="container delivery">
-			<div class="row main-opt">
-				<div class="col-4 link-def">Имя</div><div class="col"><input class="input-zakaz main" type="text" name="name" required></div>
-				<div class="col-4 link-def">Телефон</div><div class="col"><input class="input-zakaz main" id="phone-mask" type="phone" name="phone" required></div>
-				<div class="col-4 link-def">Улица</div><div class="col"><input class="input-zakaz main" type="text" name="street" required></div>
+		<div class="site-wrapper checkout">
+			<h1 class="page-title text-center">Оформление заказа</h1>
+			<div class="container">
+				<div class="row main-opt pb-3">
+						
+						<div class="col-md-6 link-def">
+								<input class="input-zakaz main" type="text" name="name" placeholder="Имя" required>
+
+						</div>
+						<div class="col-md-6 link-def">
+							<input class="input-zakaz main" id="phone-mask" type="phone" name="phone" placeholder="Телефон" required>
+						</div>
+				</div>
+
+
+			
+				<div class="row text-header-zakaz text-center">
+					<div class="col-6">
+						<a class="text-center del active-link" href="#">Доставка</a>
+					</div>
+					<div class="col-6">
+						<a class="text-center pick link-def" href="#">Самовывоз</a>
+					</div>
+				</div>
+			
+			<div class="delivery">
+				
+				<div class="row dop-opt mt-5">
+					<div class="col-md-9 link-def">
+						<input class="input-zakaz main" type="text" name="street" placeholder="Улица"  required>
+					</div>
+					<div class="col-md-3">
+						<input class="input-zakaz hous main" id="hous" type="text" placeholder="Дом" name="hous" required>
+					</div>
+					<div class="col-md-3">
+						<input class="input-zakaz appt main" placeholder="Кв" id="app" type="text" name="apartment" required>
+					</div>
+					<div class="col-md-3">
+						<input class="input-zakaz appt main" placeholder="Поъезд" id="app" type="text" name="apartment" required>
+					</div>
+					<div class="col-md-3">
+						<input class="input-zakaz appt main" placeholder="Этаж" id="app" type="text" name="apartment" required>
+					</div>
+					<div class="col-md-3">
+						<input class="input-zakaz appt main" placeholder="Домофон" id="app" type="text" name="apartment" required>
+					</div>
+				</div>
+				
+				<!-- <div class="row mt-3 dop-opt">
+					<div class="col-3 text-center">
+						<a class="map active-link-down" href="#">Карта</a>
+					</div>
+					<div class="col-3 text-center">
+						<a class="cash" href="#">Наличными</a>
+					</div>
+					<div class="col-6 text-center payment pt-1">
+						К оплате:<span>00000</span>р.
+					</div>
+				</div> -->
+				
 			</div>
-			<div class="row dop-opt">
-				<div class="offset-2">Дом<input class="input-zakaz ml-2 hous main" id="hous" type="text" name="hous" required></div>
-				<div class="ml-5">Кв<input class="input-zakaz ml-2 appt main" id="app" type="text" name="apartment" required></div>
-			</div>
-			<div class="row">
-				<p class="link-def ml-3">Комментарий:</p>
-				<textarea name="comment" class="comm-area m-auto" id="com" cols="36" rows="3" placeholder="Уточните пожалуйста подъезд, этаж, домофон или любую информацию которая поможет нам вас накормить :)"></textarea>
-			</div>
-			<div class="row mt-3 dop-opt">
-				<div class="col-3 text-center"><a class="map active-link-down" href="#">Карта</a></div>
-				<div class="col-3 text-center"><a class="cash" href="#">Наличными</a></div>
-				<div class="col-6 text-center payment pt-1">К оплате:<span>00000</span>р.</div>
-			</div>
-		</div>
-		<!-- Само вывоз -->
-		<div class="container pickup" style="display: none;">
-			<div class="row">
-				<div class="col-4 link-def">Имя</div><div class="col"><input class="input-zakaz no-main" type="text" name="name" required></div>
-				<div class="col-4 link-def">Телефон</div><div class="col"><input class="input-zakaz no-main" id="phone-mask-pick" type="phone" name="phone" required></div>
+
+			<!-- Само вывоз -->
+			<div class="pickup" style="display: none;">
+				<p class="address ml-4 mr-2 text-center mt-5">Ждем вас круглосуточно по адресу Ул.Крупской, д.41А</p>
 			</div>
 			<div class="row mt-5">
-				<div class="">
-					<p class="address ml-4 mr-2">Ждем вас круглосуточно по адресу Ул.Крупской, д.41А</p>
+				<div class="col-12">
+					<textarea name="comment" class="comm-area m-auto" id="com" rows="3" placeholder="Уточните пожалуйста подъезд, этаж, домофон или любую информацию которая поможет нам вас накормить :)"></textarea>
 				</div>
 			</div>
-		</div>
-		<div class="container">
-			<div class="row float-right credit">
-				<p class="mr-5 pr-1 mt-3 link-credits-one text-center">Оплатить</p>
-
+			<div class="row cart-totals pt-5">
+				<div class="col-lg-6 col-12 ">
+					Сдесь будет выбор оплаты
+				</div>
+				<div class="col-lg-6 col-12">
+					<div class="processed-checkout">
+					<span class="total pr-2">
+						<span class="total-label">Итого:</span>
+						<span class="total-value">999999 </span>
+						<span>р.</span>
+					</span>
+						<button class="badge badge-warning cart-btn">Оформить заказ</button>
+					</div>
+				</div>
 			</div>
-			<div class="row float-right no-credit" style="display: none;">
-				<p class="mr-5 pr-1 mt-3 link-credits-two text-center">Заказать</p>
+			<!-- <div class="">
+				<div class="row float-right credit">
+					<p class="mr-5 pr-1 mt-3 link-credits-one text-center">Оплатить</p>
+
+				</div>
+				<div class="row float-right no-credit" style="display: none;">
+					<p class="mr-5 pr-1 mt-3 link-credits-two text-center">Заказать</p>
+				</div>
+			</div> -->
 			</div>
 		</div>
 		<footer>

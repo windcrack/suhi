@@ -21,6 +21,10 @@ iframe {
   color: #F47810;
 }
 
+h1.page-title {
+  margin: 2rem 0;
+}
+
 h1.block-header,
 h2.block-header,
 h3.block-header,
@@ -502,7 +506,6 @@ a {
   background-color: rgba(99, 64, 2, 0.1);
   border-radius: .5rem;
   border: solid 1px #F47810;
-  margin: 0 0 2rem 0;
   text-align: center;
   color: #F47810;
 }
@@ -522,10 +525,6 @@ a {
   font-size: 1.125rem;
   font-weight: 300;
 }
-.dop-opt input {
-  width: 5rem;
-  float: right;
-}
 .dop-opt .payment {
   font-size: 0.875rem;
 }
@@ -535,11 +534,30 @@ a {
   color: #E3E9CB;
   background-color: rgba(99, 64, 2, 0.1);
   font-size: 0.8125rem;
+  width: 100%;
 }
 
 .address {
   color: #E3E9CB;
   font-size: 0.875rem;
+}
+
+.checkout input {
+  width: 100%;
+  margin-bottom: 1.5rem;
+}
+.checkout .container {
+  max-width: 613px;
+}
+
+.woocommerce-MyAccount-navigation ul {
+  list-style: none;
+}
+.woocommerce-MyAccount-navigation ul li.is-active a {
+  color: #F47810;
+}
+.woocommerce-MyAccount-navigation ul li a:hover {
+  color: #FDAD1E;
 }
 
 @media screen and (max-width: 600px) {

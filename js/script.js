@@ -133,15 +133,35 @@ $(document).ready(() =>{
       	autoplay: true,
       	autoplaySpeed: 3000
   	});
-  	$('.next-towar').slick({
+  	
+	function flexHeightFix(parent=null, child){
+			console.log(parent);
+			console.log(child);
+			return;
+			// let parentObject = document.querySelector(parent);
+			// $(child).css('height', parentObject.clientHeight);
+		}
+	//flexHeightFix();
+	// function flexHeightFixTest(){
+	// 	console.log('test');
+	// 	return;
+	// 		// let parentObject = document.querySelector(parent);
+	// 		// $(child).css('height', parentObject.clientHeight);
+	// 	}
+
+	// let next = document.querySelector('.next-towar'),
+	// 	price = document.querySelector('.block-on-js');
+	
+	// $('.product-description').css('height', price.clientHeight);
+});
+function callSliderWithFlexHeightFix(parent, child, params){
+	$(parent).slick({
       	arrows: false,
       	arrows: false,
       	initialSlide: 0,
         slidesToShow: 3,
         slideToScroll: 1
 	});
-	let next = document.querySelector('.next-towar'),
-		price = document.querySelector('.block-on-js');
-	$('.sale-product').css('height', next.clientHeight);
-	$('.product-description').css('height', price.clientHeight);
-});
+	let parentObject = document.querySelector(parent);
+	$(child).css('height', parentObject.clientHeight);
+}

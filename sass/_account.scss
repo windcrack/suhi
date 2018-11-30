@@ -1,0 +1,18 @@
+.woocommerce-MyAccount-navigation{
+	ul{
+		list-style: none;
+		li{
+			&.is-active{
+				a{
+					color: $secondaryFontColor-dark;
+				}
+			}
+			a{
+				&:hover{
+					color: $secondaryFontColor-light;
+				}
+			}
+		}
+	}
+
+}
