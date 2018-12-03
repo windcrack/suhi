@@ -47,18 +47,18 @@ $(document).ready(() =>{
 	$('.show').click(function(){
 		$(this).parent('.description').addClass('moret');
 	});
-	$('.button-open').click(function(){
-		$('.side-menu').addClass('move');
-		$('.content-in').show('300');
-		$('.side-menu').css('z-index', '99');
-		$('.button-open').hide();
-	});
-	$('.button-close').click(function(){
-		$('.side-menu').removeClass('move');
-		$('.content-in').hide('300');
-		$('.button-open').show();
-		$('.side-menu').css('z-index', '0');
-	});
+	// $('.button-open').click(function(){
+	// 	$('.side-menu').addClass('move');
+	// 	$('.content-in').show('300');
+	// 	$('.side-menu').css('z-index', '99');
+	// 	$('.button-open').hide();
+	// });
+	// $('.button-close').click(function(){
+	// 	$('.side-menu').removeClass('move');
+	// 	$('.content-in').hide('300');
+	// 	$('.button-open').show();
+	// 	$('.side-menu').css('z-index', '0');
+	// });
 	$(() =>{
 		$('#phone-mask').mask('+7(999) 999-99-99');
 		$('#phone-mask-pick').mask('+7(999) 999-99-99');
@@ -138,26 +138,11 @@ $(document).ready(() =>{
 			console.log(parent);
 			console.log(child);
 			return;
-			// let parentObject = document.querySelector(parent);
-			// $(child).css('height', parentObject.clientHeight);
 		}
-	//flexHeightFix();
-	// function flexHeightFixTest(){
-	// 	console.log('test');
-	// 	return;
-	// 		// let parentObject = document.querySelector(parent);
-	// 		// $(child).css('height', parentObject.clientHeight);
-	// 	}
-
-	// let next = document.querySelector('.next-towar'),
-	// 	price = document.querySelector('.block-on-js');
-	
-	// $('.product-description').css('height', price.clientHeight);
 });
 function callSliderWithFlexHeightFix(parent, child, params){
 	$(parent).slick({
-      	arrows: false,
-      	arrows: false,
+      	arrows: true,
       	initialSlide: 0,
         slidesToShow: 3,
         slideToScroll: 1

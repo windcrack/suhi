@@ -1,5 +1,5 @@
 // Cache selectors
-var lastId,
+let lastId,
     topMenu = $("#top-menu"),
     topMenuHeight = topMenu.outerHeight()+50,
     // All list items
