@@ -164,12 +164,21 @@ header {
   background-color: transparent;
   border: none;
   float: left;
-  background: url("../img/btn-start.svg") no-repeat;
   margin: 1rem 3rem 0 1rem;
   width: 35px;
-  height: 25px;
+  height: 29px;
   cursor: pointer;
-  z-index: 51;
+  z-index: 103;
+}
+
+.btn-side-open {
+  background: url("../img/btn-start.svg") no-repeat;
+  background-size: contain;
+}
+
+.btn-side-close {
+  background: url("../img/close.svg") no-repeat;
+  background-size: contain;
 }
 
 .text-slider {
@@ -331,6 +340,7 @@ a {
   position: relative;
   font-weight: 600;
   font-size: 1.125rem;
+  margin-left: 1rem;
 }
 
 .social {
@@ -634,6 +644,40 @@ a {
 
   .text-menu .slick-track {
     width: 50000px !important;
+  }
+
+  .site-wrapper {
+    z-index: -1000;
+  }
+
+  .toggle-button {
+    position: fixed;
+    background-color: transparent;
+    border: none;
+    top: 17rem;
+    left: 0;
+    margin: 0;
+    width: 18px;
+    height: 60px;
+    cursor: pointer;
+    z-index: 200;
+  }
+
+  .btn-side-open {
+    background: url("../img/uhide.svg") no-repeat;
+    background-size: contain;
+  }
+
+  .btn-side-close {
+    background: url("../img/hide.svg") no-repeat;
+    background-size: contain;
+    margin-left: -.6rem;
+  }
+
+  .slideout-open,
+  .slideout-open .slideout-panel {
+    overflow-x: visible !important;
+    overflow-y: visible !important;
   }
 }
 
