@@ -233,19 +233,14 @@ a{
 .description{
 	font-size: 0.8125rem;
 	min-height: 1rem;
-	.show{
+	.show-t{
 		cursor: pointer;
 	}
-	.hide{
+	.hide-t{
 		display: none;
 	}
-	&.moret{
-		.hide{
-			display: inline;
-		}
-		.crop{
-			display: none;
-		}
+	.crop{
+		cursor: pointer;
 	}
 }
 .description-text{

@@ -251,17 +251,14 @@ a {
   font-size: 0.8125rem;
   min-height: 1rem;
 }
-.description .show {
+.description .show-t {
   cursor: pointer;
 }
-.description .hide {
+.description .hide-t {
   display: none;
 }
-.description.moret .hide {
-  display: inline;
-}
-.description.moret .crop {
-  display: none;
+.description .crop {
+  cursor: pointer;
 }
 
 .description-text {
